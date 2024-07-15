@@ -36,7 +36,9 @@ test("should prevent brute force attacks", async ({ page }) => {
   // Loop through the passwords and perform login attempts
   for (let attempt = 1; attempt <= maxAttempts + 2; attempt++) {
     // Get the password for the current attempt
-    const password = passwords[attempt - 1]?.trim();
+    const randomIndex = Math.floor(Math.random() * passwords.length);
+    const password = passwords[randomIndex]?.trim();
+    // const password = passwords[attempt - 1]?.trim();
 
     // If there are no more passwords, break the loop
     if (!password) {
