@@ -5,6 +5,7 @@ Przykłady testów automatycznych playwright
 ## instruction
 npm install
 
+Projrkt zakłada pojedyncze zbiory testów takie jak testy bezpieczeństwa ale także zbiory testów oparte na frameworku testowym napisanym obiektowo w typescript do szerszego wykorzystania.
 
 - **Run all tests**: `npx playwright test`
 - **Run a specific test file**: `npx playwright test path/to/your/test.spec.ts`
